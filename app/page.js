@@ -1,9 +1,13 @@
-import Image from "next/image";
+import AboutMe from "@/components/AboutMe";
+import HeroComponent from "@/components/HeroComponent";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      This is my porfolio website
+      {/* <Navbar /> */}
+      <HeroComponent />
+      <AboutMe />
     </div>
   );
 }
