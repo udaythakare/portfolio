@@ -1,5 +1,4 @@
 'use client';
-
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
@@ -18,98 +17,83 @@ import WorkSliderBtns from "../../components/ui/WorkSliderBtns";
 const projects = [
   {
     num: '01',
-    category: 'full-stack Project',
-    title: 'DevFlow - Social Media Analysis',
-    description: 'A comprehensive analytics dashboard for social media insights. The platform visualizes metrics like likes, comments, shares, and reach across different post types (carousel, static, reels). Includes AstraDB integration for data fetching.',
+    category: 'Full-Stack Project',
+    title: 'ScrollConnect – Campus Events Platform',
+    description: 'A campus events platform using Next.js (frontend) and Supabase (backend). Enables event creation, discovery, and registration for university students. Features user authentication, real-time updates, and notifications.',
     stack: [
       { name: 'Next.js' },
-      { name: 'tailwind' },
-      { name: 'AstraDB' },
+      { name: 'Supabase' },
+      { name: 'WebSockets' },
+      { name: 'Tailwind CSS' },
     ],
-    image: "/assests/work/Devflow.png",
-    live: 'https://super-level-mind.vercel.app',
-    github: 'https://github.com/Aditya-jambhale/SuperlevelMindHack',
+    image: "/assests/work/scrollconnect.png",
+    live: '', // Add live URL if available
+    github: '', // Add GitHub repository URL if available
   },
-
   {
     num: '02',
-    category: 'Full Stack Project',
-    title: 'Book Store Application',
-    description: 'A web application for browsing, searching, and managing books, offering features like viewing details, adding entries, and updating records. It ensures efficient book management with a user-friendly interface.',
+    category: 'AI Project',
+    title: 'LLM Model From Scratch',
+    description: 'Built a Large Language Model (LLM) from scratch using PyTorch, leveraging concepts of NLP, backpropagation, and CNNs. Trained on diverse datasets to enhance performance and versatility.',
     stack: [
-      { name: 'MERN-STack' },
-      { name: 'tailwind.css' },
+      { name: 'PyTorch' },
+      { name: 'NLP' },
+      { name: 'CNNs' },
+      { name: 'Backpropagation' },
     ],
-    image: "/assests/work/bookstore.png",
-    live: 'https://book-store-app-frontend-beige.vercel.app/',
-    github: 'https://github.com/Aditya-jambhale/Book-Store-app',
+    image: "/assests/work/llm.png",
+    live: '', // Add live URL if available
+    github: '', // Add GitHub repository URL if available
   },
   {
     num: '03',
-    category: 'Frontend Project',
-    title: 'Hacktoberfest Workflow',
-    description: 'A frontend application for project discovery and resource sharing, aimed at helping contributors explore repositories and access tools for effective open-source participation during Hacktoberfest.',
+    category: 'Full-Stack Project',
+    title: 'ScrollProjects – Project Showcase Platform',
+    description: 'A platform for discovering and sharing innovative projects using Next.js. Integrated Groq API (Llama) for AI-driven project recommendations and idea generation. Includes an AI Idea Generator, UML Diagram Creator, and Project Showcase.',
     stack: [
-      { name: 'React.js' },
-      { name: 'tailwind.css' },
-
+      { name: 'Next.js' },
+      { name: 'Groq API (Llama)' },
+      { name: 'Hugging Face' },
+      { name: 'Server-Side Rendering (SSR)' },
     ],
-    image: "/assests/work/Github.png",
-    live: 'https://hacktober-workflow.vercel.app/',
-    github: 'https://github.com/Aditya-jambhale/Hacktober-Workflow',
+    image: "/assests/work/scrollprojects.png",
+    live: '', // Add live URL if available
+    github: '', // Add GitHub repository URL if available
   },
   {
     num: '04',
-    category: 'full-stack Project',
-    title: 'Edu-Connect',
-    description: 'EduConnect is a web-based platform that connects students with educational resources, instructors, and peers to enhance their learning experience. The platform provides tools to facilitate study sessions, discussion forums, and personal learning plans.',
+    category: 'Full-Stack Project',
+    title: 'Government Website Development',
+    description: 'Contributed to building a government website using React.js and Node.js. Implemented analytical functionality, pagination, and other user-friendly features to enhance the Project Management System (PMS) website.',
     stack: [
-      { name: 'Python' },
-      { name: 'Next.js' },
-      { name: 'tailwind.css' },
-      { name: 'GenAi' },
-
+      { name: 'React.js' },
+      { name: 'Node.js' },
+      { name: 'Google Cloud Platform (GCP)' },
+      { name: 'BigQuery' },
     ],
-    image: "/assests/work/Edu.png",
-    live: '',
-    github: 'https://github.com/Aditya-jambhale/Edu-Connect',
+    image: "/assests/work/govtwebsite.png",
+    live: '', // Add live URL if available
+    github: '', // Add GitHub repository URL if available
   },
   {
     num: '05',
-    category: 'full-stack Project',
-    title: 'Regional Transport Office(RTO)',
-    description: 'The project is a service based website having the services to Renew the licence and etc is in the files.I have used the handlebars and node in the backend with the SQL Database.',
+    category: 'Full-Stack Project',
+    title: 'E-commerce Platform',
+    description: 'Developed an e-commerce platform using Next.js for the frontend, Node.js for the backend, and MySQL as the database. Introduced virtual shop functionality enabling vendors to create personalized shops and manage product listings.',
     stack: [
-      { name: 'HTMl5' },
-      { name: 'Handlebars.js' },
-      { name: 'Css' },
-      { name: 'SQL' },
-
-
+      { name: 'Next.js' },
+      { name: 'Node.js' },
+      { name: 'MySQL' },
+      { name: 'Deployment (VPS Hosting)' },
     ],
-    image: "/assests/work/RTO.png",
-    live: 'https://rto-regional-transport-office.vercel.app/',
-    github: 'https://github.com/Aditya-jambhale/RTO--Regional-Transport-office-',
-  },
-  {
-    num: '06',
-    category: 'full-stack Project',
-    title: 'Nextauthapp',
-    description: 'This project was created to understand the basics of nextauth and project structure of nextjs',
-    stack: [
-      { name: 'Nextjs' },
-      { name: 'MongoDb Atlas' },
-      { name: 'tailwind.css' },
-    ],
-    image: "/assests/work/next.png",
-    live: 'https://nextauthapp-sigma.vercel.app/',
-    github: 'https://github.com/Aditya-jambhale/nextauthapp',
+    image: "/assests/work/ecommerce.png",
+    live: '', // Add live URL if available
+    github: '', // Add GitHub repository URL if available
   },
 ];
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
-
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);

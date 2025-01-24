@@ -14,16 +14,16 @@ const Header = () => {
                 {/*logo*/}
                 <Link href='/'>
                     <h1 className="text-4xl font-semibold">
-                        A<span className="text-accent">J</span>
+                        U<span className="text-accent">T</span>
                     </h1>
                 </Link>
                 {/* Desktop Navbar */}
 
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <Link href='https://linktr.ee/aditya_jambhale'>
+                    {/* <Link href='https://linktr.ee/aditya_jambhale'>
                         <Button>LinkTree</Button>
-                    </Link>
+                    </Link> */}
 
                 </div>
                 <div className="xl:hidden ">

@@ -6,10 +6,10 @@ import Header from "../components/Header";
 import PageTransition from "../components/PageTransition";
 import StairTransition from "../components/StairTransition";
 export const metadata = {
-  title: "Aditya Jambhale Portfolio",
-  description: "Welcome to Aditya Jambhale's portfolio. Explore my projects, skills, and experiences in web development.",
-  keywords: "Aditya,Jambhale , Aditya Jambhale, Backend Devloper, Node.js ,Portfolio, Web Developer, Next.js, MERN Stack,Aditya Shankar Jambhale, CSI-CATT DMCE , CSI DMCE , DMCE ,Jambhale",
-  author: "Aditya Jambhale",
+  title: "Uday Thakare Portfolio",
+  description: "Welcome to Uday Thakare's portfolio. Explore my projects, skills, and experiences in web development.",
+  keywords: "Uday, Thakare , Uday Thakare, Backend Devloper, Node.js ,Portfolio, Web Developer, Next.js, MERN Stack,Uday Vinod Thakare, CSI-CATT DMCE , CSI DMCE , DMCE ,Thakare",
+  author: "Uday Thakare",
 };
 
 const jetbrainsMono = JetBrains_Mono({
@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="preload" href="/favicon.ico" as="image" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Aditya Jambhale Portfolio" />
-        <meta property="og:description" content="Explore Aditya Jambhale's web development projects and experiences." />
+        <meta property="og:title" content="Uday Thakare Portfolio" />
+        <meta property="og:description" content="Explore Uday Thakare's web development projects and experiences." />
         <meta property="og:image" content="/photof.jpg" /> {/* Replace with your image */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aditya-jambhale.vercel.app" />
+        <meta property="og:url" content="https://portfolio-puce-theta-12.vercel.app/" />
       </Head>
       <body
         className={jetbrainsMono.variable}>

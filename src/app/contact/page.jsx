@@ -12,12 +12,12 @@ const info = [
     {
         icon: <FaEnvelope />,
         title: "Email",
-        description: "techads.work@gmail.com",
+        description: "udaythakare592004@gmail.com",
     },
     {
         icon: <FaMapMarkedAlt />,
         title: "Address",
-        description: "Koparkhairne, Navi-Mumbai, Maharashtra",
+        description: "Airoli, Navi-Mumbai, Maharashtra",
     },
 ];
 

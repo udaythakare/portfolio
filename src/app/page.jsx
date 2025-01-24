@@ -15,10 +15,10 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* Text Content */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl text-white/80">Backend Developer</span>
+            <span className="text-xl text-white/80">Full Stack Web Developer</span>
             <h1 className="h2 mt-4">
               Hello, I'm <br />
-              <span className="text-accent h2">Aditya Jambhale</span>
+              <span className="text-accent h2">Uday Thakare</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Experienced in backend development, skilled in building efficient APIs,
@@ -27,8 +27,8 @@ const Home = () => {
             {/* Buttons and Social Links */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="https://drive.google.com/file/d/1xDp0KvaOhCYzpNk2xY6XsCRLD4l9GVbV/view?usp=sharing"
-                download="Aditya Jambhale.pdf"
+                href="https://drive.google.com/file/d/1HVx2hiu0HePS1aJfx8w6WlFXKggpGhbf/view?usp=sharing"
+                download="UdayThakare.pdf"
                 className="uppercase flex items-center gap-2"
               >
                 <Button variant="outline" size="lg">

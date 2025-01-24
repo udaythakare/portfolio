@@ -1,6 +1,6 @@
 "use client";
 import { FaHtml5, FaCss3, FaJsSquare, FaDatabase, FaNodeJs, FaJava, FaGithub, FaServer } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb, SiDocker, SiKubernetes, SiTensorflow, SiPytorch, SiScikitlearn, SiOpenai, SiPython, SiAwslambda, SiGooglecloud } from "react-icons/si";
 import { AiOutlineApi } from 'react-icons/ai';
 
 
@@ -11,17 +11,17 @@ const about = {
     info: [
         {
             fielname: "Name:",
-            fieldvalue: "Aditya Jambhale"
+            fieldvalue: "Uday Thakare"
         }, {
             fielname: "Experience:",
             fieldvalue: "Fresher"
         }, {
             fielname: "Email:",
-            fieldvalue: "techads.work@gmail.com"
+            fieldvalue: "udaythakare592004@gmail.com"
         },
         {
             fielname: "Phone Number:",
-            fieldvalue: "(+91)8108765751 "
+            fieldvalue: "(+91)9867302261"
         }, {
             fielname: "Nationality: ",
             fieldvalue: "Indian"
@@ -74,13 +74,13 @@ const education = {
             duration: "2023-2026",
         },
         {
-            institution: "Bharati Vidyapeeth        Institute of Technology",
-            degree: "Polytechnic,Computer Technology",
+            institution: "Government Polytechnic Thane",
+            degree: "Polytechnic, Computer Engineering",
             duration: "2020-2023",
         },
 
         {
-            institution: "St.Lawerence High School",
+            institution: "SMT. Radhikabai Meghe Vidyalaya",
             degree: "SSC",
             duration: "2020",
         },
@@ -90,23 +90,23 @@ const education = {
 //skills data
 const skills = {
     title: "My Skills",
-    description: "Proficient in backend technologies, databases, and modern frameworks, with a focus on delivering clean, maintainable code.",
+    description: "Proficient in backend technologies, databases, cloud services, AI/ML, and modern frameworks, with a focus on delivering clean, maintainable code.",
     skillList: [
         {
             icon: <FaHtml5 />,
-            name: "html 5",
+            name: "HTML 5",
         },
         {
             icon: <FaCss3 />,
-            name: "css 3",
+            name: "CSS 3",
         },
         {
             icon: <FaJsSquare />,
-            name: "javascript",
+            name: "JavaScript",
         },
         {
             icon: <SiNextdotjs />,
-            name: "next.js",
+            name: "Next.js",
         },
         {
             icon: <SiFirebase />,
@@ -118,7 +118,7 @@ const skills = {
         },
         {
             icon: <FaNodeJs />,
-            name: "node.js",
+            name: "Node.js",
         },
         {
             icon: <FaServer />,
@@ -126,27 +126,61 @@ const skills = {
         },
         {
             icon: <AiOutlineApi />,
-            name: "RESTAPI",
+            name: "REST API",
         },
         {
             icon: <FaJava />,
-            name: "java",
+            name: "Java",
         },
         {
             icon: <FaDatabase />,
-            name: "database",
+            name: "Database",
         },
         {
             icon: <SiTailwindcss />,
-            name: "tailwind.css",
+            name: "Tailwind CSS",
         },
         {
             icon: <FaGithub />,
-            name: "github",
+            name: "GitHub",
+        },
+        // Cloud-related skills
+        {
+            icon: <SiAwslambda />,
+            name: "AWS",
+        },
+        {
+            icon: <SiGooglecloud />,
+            name: "Google Cloud",
+        },
+        {
+            icon: <SiDocker />,
+            name: "Docker",
+        },
+        {
+            icon: <SiKubernetes />,
+            name: "Kubernetes",
+        },
+
+        {
+            icon: <SiPytorch />,
+            name: "PyTorch",
+        },
+        {
+            icon: <SiScikitlearn />,
+            name: "Scikit-learn",
+        },
+        {
+            icon: <SiOpenai />,
+            name: "OpenAI",
+        },
+        {
+            icon: <SiPython />,
+            name: "Python",
         },
     ]
-
 }
+
 
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '../../components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip';
@@ -269,7 +303,7 @@ const resume = () => {
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[750px] mx-auto xl:mx-0">
                                     {about.info.map((item, index) => {
                                         return (
                                             <li key={index}
